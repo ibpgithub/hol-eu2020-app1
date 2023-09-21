@@ -1,6 +1,6 @@
 applications:
   - name: welcome
-    memory: 32M
+    memory: 128M
     buildpacks:
       - staticfile_buildpack
     random-route: true
