@@ -1,6 +1,15 @@
 applications:
-  - name: welcome
+  - name: fcstext199
     memory: 128M
     buildpacks:
       - staticfile_buildpack
+    command: python server.py
+    env:
+      destinations: >
+      [
+      {
+        'name':'fcstext199'
+        'url' : 'https://fcstext199.cfapps.ap21.hana.ondemand.com'
+      }
+      ]
     random-route: true
