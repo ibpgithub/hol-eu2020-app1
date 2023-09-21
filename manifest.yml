@@ -1,7 +1,8 @@
 applications:
   - name: fcstext199
     memory: 128M
-    buildpacks: python_buildpack
+    buildpacks: 
+      - python-buildpack
     command: python server.py
     env:
       destinations: >
