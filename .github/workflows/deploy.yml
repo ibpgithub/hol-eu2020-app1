@@ -11,9 +11,9 @@ jobs:
       - name: Deploy to Cloud Foundry
         uses: jhunt/cf-push@v1
         with:
-          api:      https://api.hol.starkandwayne.com
-          org:      starkandwayne
-          space:    ${{ secrets.CF_SPACE }}
+          api:      ${{ secrets.CF_API }}
+          org:      ${{ secrets.CF_ORG }}
+          space:    dev
           username: ${{ secrets.CF_USERNAME }}
           password: ${{ secrets.CF_PASSWORD }}
           manifest: manifest.yml
