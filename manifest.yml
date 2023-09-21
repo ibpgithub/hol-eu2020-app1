@@ -8,7 +8,7 @@ applications:
       destinations: >
       [
       {
-        'name':'fcstext199'
+        'name':'fcstext199',
         'url' : 'https://fcstext199.cfapps.ap21.hana.ondemand.com'
       }
       ]
